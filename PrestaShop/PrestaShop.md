@@ -21,7 +21,7 @@ B- https://www.prestashop.com
 C- Es un software creado para gestionar una tienda virtual(Idioma principal Frances).
 D- Software de Aplicacion
 E- Software Libre
-F- Involucrados:
+F- Actores:
 
 	Usuarios:
 		Directos: Persona la cual crea su propia tienda desde el software
@@ -83,8 +83,125 @@ Requerimientos Funcionales:
 
 Requerimientos No Funcionales:
 	
-	Portabilidad y Compatibilidad: Funciona en Mac, Windows y Linux, Se puede utilizar tanto en computadoras
-					como en telefonos celulares
+	Este software es compatible con gran variedad de sistemas operativos como lo son Mac, Windows y Linux
+	Se puede utilizar tanto en computadoras como en telefonos celulares
 	
-	Internalizacion y Localizacion: Existe una gran internalizacion por que cuenta con una gran cantidad de modulos 
-					para nuestras facilidad y comprension, su sede principal se encuentra en Paris
+	En cuanto al pago de su software como su sede es centralizada en Paris su moneda seria el Euro pero como se 
+	recorre por todo el mundo existe la posiblidad de pagarlo tambien en dolares
+					
+					
+Caso de Usos 
+
+	Comprar Articulo:
+		Actor Primario: -Usuario
+		
+		Actor Segundario: -Dueño (De la tienda virtual)
+		
+		Pre-Condiciones: -El usuario debe estar registrado para visualizar los productos.
+		
+		Post-Condiciones: -El usuario compra el producto
+		
+		Flujo Principal: 1- El usuario ingresa a la tienda virtual deseada.
+				2- Seleccionar el articulo deseado.
+				3- Presionar en comprar
+				4- Ingresar un metodo de pago
+				5- El sistema muestra "Compra Exitosa"
+		
+		Flujo Alterno: 2-(b) El sistema indica que no se encuentran articulos disponibles
+				3- (b) Se muestra mensaje "No hay articulos disponibles"
+	
+		
+	
+	Crear Tienda
+		Actor Primario: -Usuario
+		
+		Actor Segundario: -Algoritmo del programa
+		
+		Pre-Condiciones: El usuario debe de estar registrado y auntenticado en el sistema
+		
+		Post-Condiciones: El usuario puede mostrar su tienda en linea.
+		
+		Flujo Principal: 1- Se selecciona la opcion de "crear una tienda"
+				2- Se introduce el nombre, el lugar de residencia y cedula
+				3- Se selecciona la categoria de Tienda
+				4- Introduce el nombre de la tienda.
+				5- Se selecciona crear tienda
+		
+		Flujo Alternos: 2- (b) El sistema indica que ya hay registrado el nombre de la tienda en el sistema
+				3- (b) El sistema indica que no se lograron verificar los datos personales 
+				
+	
+	
+	Cambiar Diseño de la Pagina:
+		Actor Primario: -Usuario
+		
+		Actor Segundario: -Algoritmo del Programa
+		
+		Pre-Condiciones: Tener previamente una Tienda Virtual creada.
+		
+		Post-Condiciones: El diseño de la pagina ha cambiado.
+		
+		Flujo Principal: 1- Selecciona el apartado de "Configuraciones"
+				2- Selecciona "Diseños de Tienda"
+				3- Se selecciona el diseño preferido
+				4- Se selecciona "confirmar"
+				5- Se muestra mensaje de "Cambio con exito"
+				
+		Flujo Alterno: 2- (b) Se muestra un mensaje que ocurrio un error mientras se procedia en el cambio
+				3- Se muestra "Error no se logro cambiar el diseño" 
+				
+	Cambiar Idioma:
+				
+		Actor Primario: -Usuario
+		
+		Actor Segundario: -Algoritmo del Programa
+		
+		Pre-Condiciones: -Tener previamente una Tienda Virtual Creada.
+		
+		Post-Condiciones: -Cambio de Idioma al de la preferencia del Usuario
+		
+		Flujo Principal: 1- Se selecciona configuracion
+				2- Se selecciona en el apartado de "Internacional"
+				3- Se selecciona "Translations"
+				4- Se elige de entre las muchas opciones que se encuentran
+				5- Se selecciona "Añadir y actualizar"
+				
+		Flujo Alterno: 2-(b) El sistema muestra un mensaje de Idioma no disponible en este momento
+				3- Mensaje "Este idioma no se encuentra disponible"
+	
+	Activar Modulo:
+		
+		Actor Primario: -Usuario
+		
+		Actor Segundario: -Algoritmo del Programa 
+		
+		Pre-Condiciones: -Tener previamente una Tienda Virtual Creada
+		
+		Post-Condiciones: -Modificacion de los modulos a gusto propio 
+		
+		Flujo principal: 1-Se selecciona la configuracion
+				2-Se selecciona el apartado de modulos
+				3-Se edita la posicion de los modulos 
+				4-Se confirman las modificaciones
+				
+		Flujo Alterno: 2-(b) Los modulos modificados no aceptan los cambios
+				3- Muestra un mensaje de error
+		
+	
+	Envio de Producto
+		
+		Actor Primario: -Usuarios
+		
+		Actor Segundario: -Algoritmo del Programa
+		
+		Pre-Condiciones: -Haber seleccionado un articulo para su compra
+		
+		Post-Condiciones: -Se envia el producto
+		
+		Flujo principal: 1- Se selecciona en que quiere que sea el envio
+				2-Se confirma la opcion elegida
+				3-Muchas gracias por su compra
+		
+		Flujo Alternativo: 2- (b) El envio no esta disponible en este momento 
+				   3-Se muestra un error en pantalla 
+		
